@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
+  	@category = Category.find(params[:id])
   end
 
   def new
@@ -15,7 +16,7 @@ class CategoriesController < ApplicationController
   	if @category.save
   		redirect_to @category 
   	else
-  		@errors = category.errors.full_messages
+  		@errors = @category.errors.full_messages
   		render :new
   	end
   end

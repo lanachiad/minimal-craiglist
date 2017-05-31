@@ -1,0 +1,10 @@
+Category.new(title: "Puppies")
+Category.new(title: "Cars")
+Category.new(title: "Furniture")
+
+Article.new(title: "Basenji puppy", description: "Got a cute basenji pupper right here. $200/OBO", category_id: 1)
+Article.new(title: "Retired Racing Pharaoh Hound", description: "This two-year-old purebred Pharaoh Hound is retired and looking for a forever home to be down-right lazy in. Free", category_id: 1)
+Article.new(title: "'67 Chevy Impala", description: "If you're looking at this, you've probably watched Supernatural. $2,000 as is. I'll give it to you if you can name the best season of that stupid show. Hint: it's no season above season five", category_id: 2)
+Article.new(title: "2013 SmartCar", description: "Yeah, I'm sure they're much nicer now, but don't you want the first gen of this stupid car that can be parked just about anywhere? For real though: much love to the SC (SmartCar, not South Carolina)", category_id: 2)
+Article.new(title: "Egg Chair", description: "Gently used egg chair, perfect for masterminding plots for world domination. $600/OBO. Hairless cat not included", category_id: 3)
+Article.new(title: "Stool", description: "Used stool. What can I say? It's a stool. $10", category_id: 3)

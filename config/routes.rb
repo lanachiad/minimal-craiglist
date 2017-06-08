@@ -1,3 +1,19 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'categories/index'
+
+  get 'categories/show'
+
+  get 'categories/create'
+
+  get 'categories/update'
+
+  get 'categories/destroy'
+
+  get 'categories/edit'
+
+  get 'categories/new'
+
+  resources :categories, only: [:index, :show, :new, :create] do
+    resources :articles, only: [:show, :new, :create]
+  end
 end

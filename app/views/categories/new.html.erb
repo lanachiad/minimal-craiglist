@@ -1,0 +1,17 @@
+<h2>Create A New Category</h2>
+<% if @errors %>
+	<div>
+		<% @errors.each do |error| %>
+			<%= error %>
+		<% end %>
+	</div>
+<% end %>
+<%= form_for @category do |f| %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title, placeholder: "Enter title of category" %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>
